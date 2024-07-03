@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Bienvenido a la Tienda de Cámaras, tu lugar para encontrar las mejores cámaras y accesorios." />
+    <meta name="author" content="" />
+    <title>Tienda de Cámaras</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-J7jcXr2jw1gXOtXAZMdDRv4zPHfaW/Iz2Xz8k+n/+dU5Paq7xVhMblnCC3Z0ig0R" crossorigin="anonymous">
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-UbVrmeVtwSDoADQPj6vv2ZJ0RFz+XrUdfeB4I5/7MmS9Z4OSb4he3NnQ5zDeJnBQHbBj9OvvqZ5E3X5bWC7Qrg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#">Tienda de Cámaras</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    
+                    <li class="nav-item"><a id="mi-cuenta-link" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Mi Cuenta</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Novedades</a>
+                        <!-- Navbar -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="buscar.html">Todos los productos</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="buscar1.html">Productos Populares</a></li>
+                            <li><a class="dropdown-item" href="buscar2.html">Nuevas Llegadas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    
+                  <!-- Formulario de Búsqueda -->
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" id="searchInput" placeholder="Buscar productos..." aria-label="Buscar">
+                    <button class="btn btn-outline-dark" type="button" id="searchButton">Buscar</button>
+                </form>
+                <button class="btn btn-outline-dark ms-2" type="button" id="cart-button">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrito
+                    <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Encabezado-->
+    <header class="bg-dark py-5" style="background-image: url('https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Fondo.jpg'); background-size: cover;">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Bienvenido a la Tienda de Cámaras</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Encuentra las mejores cámaras y accesorios para todas tus necesidades fotográficas</p>
+            </div>
+        </div>
+    </header>
+    
+    <section id="categorias" class="py-5 bg-light">
+        <div class="container px-4 px-lg-5">
+            <div class="row">
+              
+      
+    
+                <!-- Categorías -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-10">
+                                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
+                                    <!-- Categoría Mirrorless -->
+                                    <div class="col mb-4">
+                                        <a href="#" class="text-decoration-none category-link" data-category="mirrorless">
+                                            <div class="card h-100 border-0">
+                                                <img src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/mirrorles.jpg" class="card-img-top" alt="Mirrorless">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title fw-bolder">Mirrorless</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Categoría Reflex -->
+                                    <div class="col mb-4">
+                                        <a href="#" class="text-decoration-none category-link" data-category="reflex">
+                                            <div class="card h-100 border-0">
+                                                <img src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/reflex.jpg" class="card-img-top" alt="Reflex">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title fw-bolder">Reflex</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Categoría Lentes -->
+                                    <div class="col mb-4">
+                                        <a href="#" class="text-decoration-none category-link" data-category="lentes">
+                                            <div class="card h-100 border-0">
+                                                <img src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/lentes.jpg" class="card-img-top" alt="Lentes">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title fw-bolder">Lentes</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Categoría Accesorios -->
+                                    <div class="col mb-4">
+                                        <a href="#" class="text-decoration-none category-link" data-category="accesorios">
+                                            <div class="card h-100 border-0">
+                                                <img src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/accesorios.jpg" class="card-img-top" alt="Accesorios">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title fw-bolder">Accesorios</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+    
+ <!-- Sección de Productos -->
+ <section class="py-5">
+    <div class="container px-4 px-lg-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+            <!-- Producto 1: Nikon D3500 -->
+            <div class="col mb-5 product-item" data-name="Nikon D3500" data-category="reflex">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/d3500.jpg" alt="Nikon D3500" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Nikon D3500</h5>
+                        <p class="card-text">$500.00</p>
+                        
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Nikon D3500" 
+                           data-price="500.00" 
+                           data-description="Descripción del Nikon D3500: es una cámara réflex digital (DSLR) de nivel básico ideal para principiantes y aficionados que buscan dar un paso adelante en la fotografía desde las cámaras de apuntar y disparar. Es compacta, liviana y fácil de usar, lo que la hace perfecta para llevarla de viaje o a cualquier lugar.
+
+                           Características principales:
+                           • Sensor CMOS APS-C de 24,2 megapíxeles
+                           • Sistema de enfoque automático de 11 puntos
+                           • Disparo continuo de 5 fps
+                           • Grabación de video Full HD 1080p
+                           • Pantalla LCD de 3 pulgadas
+                           • Conectividad Wi-Fi y Bluetooth
+                           • Guía para principiantes" 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/d3500.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Nikon D3500" data-price="500.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 2: Canon EOS RP -->
+            <div class="col mb-5 product-item" data-name="Canon EOS RP"data-category="reflex">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/canon%20eos%20rp.jpg" alt="Canon EOS RP" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Canon EOS RP</h5>
+                        <p class="card-text">$1200.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Canon EOS RP" 
+                           data-price="1200.00" 
+                           data-description="Descripción del Canon EOS RP: es una cámara sin espejo Full Frame que ofrece una excelente calidad de imagen en un cuerpo compacto y ligero. Es perfecta para aficionados y fotógrafos que buscan dar un paso adelante en la fotografía sin espejo sin gastar demasiado dinero.
+
+                           Características principales:
+                           • Sensor Full Frame de 26.2 megapíxeles
+                           • Enfoque automático Dual Pixel CMOS AF
+                           • Grabación de video 4K UHD
+                           • Pantalla táctil giratoria de 3 pulgadas
+                           • Wi-Fi y Bluetooth
+                           • Diseño compacto y ligero" 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/canon%20eos%20rp.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Canon EOS RP" data-price="1200.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 3: Nikon D5000 -->
+            <div class="col mb-5 product-item" data-name="Nikon D5000" data-category="reflex">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/nikon%20d5000.png" alt="Nikon D5000" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Nikon D5000</h5>
+                        <p class="card-text">$650.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Nikon D5000" 
+                           data-price="650.00" 
+                           data-description="Descripción del Nikon D5000: es una cámara réflex digital (DSLR) de nivel de entrada presentada en 2009. Es una opción popular para principiantes y aficionados que buscan una cámara con funciones más avanzadas que las de una cámara compacta.
+
+                           Características principales:
+                           • Sensor CMOS APS-C de 12,3 megapíxeles
+                           • Sistema de enfoque automático de 11 puntos
+                           • Disparo continuo de 4 fps
+                           • Grabación de video HD 720p
+                           • Pantalla LCD de 2,7 pulgadas
+                           • Guía para principiantes" 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/nikon%20d5000.png">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Nikon D5000" data-price="650.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 4: Nikon D7500 -->
+            <div class="col mb-5 product-item" data-name="Nikon D7500" data-category="reflex">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/nikon%20d7500.png" alt="Nikon D7500" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Nikon D7500</h5>
+                        <p class="card-text">$1000.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Nikon D7500" 
+                           data-price="1000.00" 
+                           data-description="Descripción del Nikon D7500: es una DSLR avanzada que captura fotos y videos excepcionales con un sensor de 20.9MP, enfoque automático rápido y preciso, pantalla táctil giratoria y diseño resistente.
+
+                           Características principales:
+                           • Sensor APS-C de 20.9MP
+                           • Enfoque automático de 51 puntos
+                           • Disparo continuo de 8 fps
+                           • Grabación de video 4K UHD
+                           • Pantalla táctil giratoria de 3.2 pulgadas
+                           • Wi-Fi y Bluetooth
+                           • Diseño resistente a la intemperie" 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/nikon%20d7500.png">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Nikon D7500" data-price="1000.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 5: Flash Yongnuo Speedlite Yn565 Ex Para Nikon -->
+            <div class="col mb-5 product-item" data-name="Flash Yongnuo Speedlite Yn565 Ex Para Nikon" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/flash.jpg" alt="Flash Yongnuo Speedlite Yn565 Ex Para Nikon" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Flash Yongnuo Speedlite Yn565 Ex Para Nikon</h5>
+                        <p class="card-text">$300.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Flash Yongnuo Speedlite Yn565 Ex Para Nikon" 
+                           data-price="300.00" 
+                           data-description="Descripción del  Flash Yongnuo Speedlite YN565EX para Nikon es un flash externo compacto y ligero que ofrece una excelente relación calidad-precio. Es ideal para fotógrafos aficionados y principiantes que buscan mejorar la iluminación de sus fotos sin gastar demasiado dinero.
+
+                           Características principales:
+                           
+                           •Número de guía: 190 a ISO 100
+                           •Cobertura del flash: 24-105 mm
+                           •Zoom automático y manual: Sí
+                           •Modo de flash múltiple: Sí
+                           •Disparador inalámbrico: Sí
+                           •Alimentación: 2 pilas AA
+                           •Compatibilidad: Cámaras Nikon DSLR
+                           Beneficios:
+                           
+                           •Iluminación potente: Número de guía alto para iluminar sujetos a distancias considerables.
+                           •Versátil: Cobertura de zoom amplia y modos de flash múltiple para diferentes situaciones.
+                           •Fácil de usar: Diseño intuitivo y controles sencillos.
+                           •Económico: Precio accesible en comparación con otras opciones en el mercado.
+                           Ideal para:
+                           
+                           •Fotografía de retratos: Iluminar rostros de forma natural y favorecedora.
+                           •Fotografía de eventos: Capturar momentos importantes con una iluminación adecuada.
+                           •Fotografía de productos: Resaltar detalles de productos pequeños.
+                           •Fotografía creativa: Experimentar con diferentes técnicas de iluminación." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/flash.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Flash Yongnuo Speedlite Yn565 Ex Para Nikon" data-price="300">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 6: Panel Fotografía Led Luz Estudio Colores -->
+            <div class="col mb-5 product-item" data-name="Panel Fotografía Led Luz Estudio Colores" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/panel%20de%20luz.jpg" alt="Panel Fotografía Led Luz Estudio Colores" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Panel Fotografía Led Luz Estudio Colores</h5>
+                        <p class="card-text">$150.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Panel Fotografía Led Luz Estudio Colores" 
+                           data-price="150.00" 
+                           data-description="Descripción del Panel de luz LED para estudio de fotografía: Iluminación versátil para fotos y videos
+                           Los paneles de luz LED para estudio de fotografía son herramientas de iluminación versátiles y asequibles que ofrecen una luz continua y suave para una variedad de aplicaciones fotográficas y de video.
+                           
+                           Características principales:
+                           
+                           •Luz LED: Iluminación continua, suave y uniforme.
+                           •Regulable en intensidad y temperatura de color: Permite ajustar la luz a tus necesidades.
+                           •Portátil y ligero: Fácil de transportar y configurar.
+                           •Duradero: Con una larga vida útil.
+                           •Asequible: Una opción económica para la iluminación de estudio." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/panel%20de%20luz.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Panel Fotografía Led Luz Estudio Colores" data-price="150">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+           <!-- Producto 7: Sony ILCE-7M4 -->
+           <div class="col mb-5 product-item" data-name="Sony ILCE-7M4" data-category="mirrorless">
+            <div class="card h-100">
+                <img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/sony%20ilce7m-4.png" alt="Sony ILCE-7M4">
+                <div class="card-body p-4 text-center">
+                    <h5 class="fw-bolder">Sony ILCE-7M4</h5>
+                    <p class="card-text">$3500.00</p>
+                    <!-- Enlace para ver detalles del producto -->
+                    <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                    data-name="Sony ILCE-7M4" 
+                    data-price="3500.00" 
+                    data-description="Descripción de la Sony ILCE-7M4: Captura imágenes impresionantes con un sensor de 33MP y enfoque automático veloz
+                    La Sony ILCE-7M4 es una cámara sin espejo Full Frame que destaca por su:
+                    
+                    •Sensor de imagen de 33 megapíxeles: Captura imágenes con gran nitidez y detalle.
+                    •Enfoque automático rápido y preciso: Ideal para fotos y videos dinámicos.
+                    •Grabación de video 4K: Crea videos de alta calidad con gran detalle y color.
+                    •Diseño compacto y resistente: Perfecta para llevarla a cualquier lugar.
+                    Ideal para:
+                    
+                    •Retratos
+                    •Paisajes
+                    •Viajes
+                    •Deportes
+                    •Vida silvestre" 
+                    data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/sony%20ilce7m-4.png">
+                    Ver detalles
+                    </a>
+                    <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Sony ILCE-7M4" data-price="3500">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+            <!-- Producto 8: Softbox para Fotografía -->
+            <div class="col mb-5 product-item" data-name="Softbox para Fotografía" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://github.com/camilaandrada/Tienda-Camaras/raw/main/softbox.jpg" alt="Softbox para Fotografía" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Softbox para Fotografía</h5>
+                        <p class="card-text">$100.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Softbox para Fotografía" 
+                           data-price="100.00" 
+                           data-description="Descripción de Softbox para Fotografía: Luz suave y difusa para fotos increíbles
+                           Un softbox para fotografía es una herramienta esencial para crear iluminación suave y difusa en tus fotos. Es una caja con un difusor frontal que suaviza la luz de un flash o una luz continua, eliminando las sombras duras y creando un efecto más natural y favorecedor.
+                           
+                           Características principales:
+                           
+                           •Forma: Rectangular, octogonal, cuadrado, etc.
+                           •Tamaño: Pequeño, mediano, grande.
+                           •Tipo de difusor: Tela, plástico, malla.
+                           •Montaje: Bowens, Speedlite, etc.
+                           Beneficios:
+                           
+                           •Luz suave y difusa: Elimina las sombras duras y crea un aspecto más natural.
+                           •Control de la dirección: Puedes dirigir la luz hacia donde la necesites.
+                           •Variedad de efectos: Puedes crear diferentes efectos de iluminación con diferentes softboxes.
+                           Fácil de usar: Son fáciles de configurar y usar.
+                           Ideal para:
+                           
+                           •Retratos: Crea retratos con una iluminación suave y favorecedora.
+                           •Productos: Resalta los detalles de tus productos.
+                           •Paisajes: Suaviza la luz natural y crea un ambiente más agradable.
+                           •Macrofotografía: Elimina las sombras duras y captura detalles finos." 
+                           data-image="https://github.com/camilaandrada/Tienda-Camaras/raw/main/softbox.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Softbox para Fotografía" data-price="100">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 9: Trípode Fotografía Profesional Gadnic -->
+            <div class="col mb-5 product-item" data-name="Trípode Fotografía Profesional Gadnic" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Tr%C3%ADpode%20Fotograf%C3%ADa%20Profesional%20Gadnic%20De%20Aluminio%20Super%20Liviano%20Color%20Negro.jpg" alt="Trípode Fotografía Profesional Gadnic" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Trípode Fotografía Profesional Gadnic</h5>
+                        <p class="card-text">$100.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Trípode Fotografía Profesional Gadnic" 
+                           data-price="100.00" 
+                           data-description="Descripción del Trípode Profesional Gadnic: Trípode Gadnic: Estabilidad para tus fotos y videos
+                           Captura imágenes nítidas y estables con el Trípode Profesional Gadnic. Fabricado con materiales de alta calidad, te brinda la estabilidad y durabilidad que necesitas para tus tomas, incluso en terrenos difíciles.
+                           
+                           Características:
+                           •Altura ajustable: 1.8m (máxima) y 59cm (mínima).
+                           •Soporta hasta 6kg de equipo.
+                           •Aluminio resistente y liviano.
+                           •Patas ajustables con cierres de giro.
+                           •Cabeza panorámica con inclinación y nivel de burbuja.
+                           •Bolsa de transporte incluida.
+
+                           Beneficios:
+                           •Capturas estables sin vibraciones.
+                           •Versátil para cualquier perspectiva.
+                           •Portátil y ligero para llevar a cualquier lugar.
+                           •Duradero para uso intensivo.
+                           •Excelente relación calidad-precio.
+
+                           Ideal para:
+                           •Fotografía de paisajes, retratos, vida silvestre y videografía.
+                           ¡Eleva la calidad de tus capturas con el Trípode Gadnic!" 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Tr%C3%ADpode%20Fotograf%C3%ADa%20Profesional%20Gadnic%20De%20Aluminio%20Super%20Liviano%20Color%20Negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Trípode Fotografía Profesional Gadnic" data-price="100">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 10: Sony Alpha Kit A7 IV OSS ILCE-7M4K-->
+            <div class="col mb-5 product-item" data-name="Sony Alpha Kit A7 IV" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Sony%20Alpha%20Kit%20A7%20IV%20OSS%20ILCE-7M4K%20sin%20espejo%20color%20negro.jpg" alt="Sony Alpha Kit A7 IV" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Sony Alpha Kit A7 IV</h5>
+                        <p class="card-text">$8000.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Sony Alpha Kit A7 IV" 
+                           data-price="4000.00" 
+                           data-description="Descripción de la Sony Alpha 7 IV: Full Frame para fotos y videos excepcionales. Cámara sin espejo Full Frame que ofrece un equilibrio entre rendimiento, calidad de imagen y versatilidad. Ideal para fotógrafos y videógrafos aficionados y profesionales.
+                           
+                           Características principales:
+                           
+                           •Sensor de imagen de 33MP: Captura imágenes nítidas y detalladas, incluso con poca luz.
+                           •Procesador de imagen BIONZ XR: Permite disparos continuos rápidos y grabación de video 4K.
+                           •Enfoque automático híbrido de 759 puntos: Enfoque rápido, preciso y confiable.
+                           •Estabilización de imagen en el cuerpo: Reduce las vibraciones para imágenes nítidas.
+                           •Grabación de video 4K UHD a 60p: Crea videos de alta calidad.
+                           •Pantalla táctil LCD de 3 pulgadas: Fácil visualización y control de imágenes y videos.
+                           •Conectividad Wi-Fi y Bluetooth: Transfiere imágenes y controla la cámara de forma remota.
+                           •Diseño compacto y ligero: Fácil de transportar." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Sony%20Alpha%20Kit%20A7%20IV%20OSS%20ILCE-7M4K%20sin%20espejo%20color%20negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Sony Alpha Kit A7 IV" data-price="4000">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 11: Nikon Z 50 sin espejo color negro -->
+            <div class="col mb-5 product-item" data-name="Nikon Z 50 sin espejo color negro" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Nikon%20Z%2050%20sin%20espejo%20color%20negro.jpg" alt="Nikon Z 50 sin espejo color negro" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Nikon Z 50 sin espejo color negro</h5>
+                        <p class="card-text">$1400.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Nikon Z 50 sin espejo color negro" 
+                           data-price="1400.00" 
+                           data-description="Descripción de la Nikon Z 50: Pequeña gran cámara sin espejo con un sensor APS-C y excelente calidad de imagen
+                           La Nikon Z 50 es una cámara sin espejo APS-C que se destaca por su pequeño tamaño, su peso ligero y su excelente calidad de imagen. Es una opción ideal para fotógrafos aficionados y profesionales que buscan una cámara versátil y fácil de usar.
+                           
+                           Características principales:
+                           
+                           •Sensor APS-C de 20,9 megapíxeles: Captura imágenes con gran nitidez y detalle, incluso en condiciones de poca luz.
+                           •Sistema de enfoque automático híbrido de 209 puntos: Enfoque automático rápido, preciso y confiable, incluso en condiciones de poca luz.
+                           •Grabación de video 4K UHD a 30 fps: Crea videos de alta calidad con gran detalle y color.
+                           •Pantalla táctil LCD de 3,2 pulgadas: Permite una cómoda visualización y control de las imágenes y videos.
+                           •Conectividad Wi-Fi y Bluetooth: Fácil transferencia de imágenes a dispositivos móviles y control remoto de la cámara.
+                           •Diseño compacto y ligero: Fácil de transportar a cualquier lugar.
+                           •Color negro: Elegante y discreto.
+                           Beneficios:
+                           
+                           •Excelente calidad de imagen: El sensor APS-C de 20,9 megapíxeles produce imágenes con gran nitidez, detalle y rango dinámico, incluso en condiciones de poca luz.
+                           •Sistema de enfoque automático rápido y preciso: El sistema de enfoque automático híbrido de 209 puntos garantiza un enfoque rápido y preciso, incluso en sujetos que se mueven.
+                           •Grabación de video 4K UHD: Graba videos de alta calidad con gran detalle y color, perfectos para capturar momentos especiales.
+                           •Pantalla táctil LCD de 3,2 pulgadas: La pantalla táctil LCD de 3,2 pulgadas permite una cómoda visualización y control de las imágenes y videos.
+                           •Conectividad Wi-Fi y Bluetooth: Transfiere fácilmente tus imágenes a dispositivos móviles y controla la cámara de forma remota.
+                           •Diseño compacto y ligero: Su tamaño compacto y ligero la hace perfecta para llevarla a cualquier lugar.
+                           Ideal para:
+                           
+                           •Fotógrafos aficionados: Es una cámara fácil de usar que te ayudará a mejorar tus habilidades fotográficas.
+                           •Viajeros: Su tamaño compacto y ligero la hace perfecta para llevarla en tus viajes.
+                           •Creadores de contenido: Graba videos de alta calidad para tus redes sociales o tu canal de YouTube." 
+                           data-image="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Nikon%20Z%2050%20sin%20espejo%20color%20negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Nikon Z 50 sin espejo color negro" data-price="1400">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 12: Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm) -->
+            <div class="col mb-5 product-item" data-name="Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm)" data-category="lentes">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Sony%20Fe%2024-70%20mm%20F2.8%20Gm%20con%20montura%20E%20(SEL2470gm).jpg" alt="Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm)" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm)</h5>
+                        <p class="card-text">$2200.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm)" 
+                           data-price="2200.00" 
+                           data-description="Descripción de la Sony FE 24-70mm F2.8 GM: Zoom todoterreno luminoso para cámaras Sony Full Frame
+                           El Sony FE 24-70mm F2.8 GM es un objetivo zoom de gama alta para cámaras Sony con montura E Full Frame. Se caracteriza por:
+                           
+                           •Apertura constante F2.8: Permite una excelente entrada de luz en todo el rango focal, ideal para bajas condiciones de iluminación y control de profundidad de campo.
+                           •Calidad de imagen excepcional: nitidez, detalle y hermoso bokeh gracias a la tecnología G Master de Sony.
+                           •Enfoque automático rápido y silencioso: Perfecto para fotografía y videografía.
+                           •Compacto y ligero: Sorprendentemente portátil para un objetivo de su categoría.
+                           •Resistente al polvo y la humedad: Ideal para uso profesional en exteriores.
+                           Es un objetivo ideal para:
+                           
+                           •Fotógrafos profesionales: retrato, paisajes, viajes, eventos.
+                           •Aficionados exigentes: que buscan un objetivo versátil y de gran calidad." 
+                           data-image="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Sony%20Fe%2024-70%20mm%20F2.8%20Gm%20con%20montura%20E%20(SEL2470gm).jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Sony Fe 24-70 mm F2.8 Gm con montura E (SEL2470gm)" data-price="2200">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 13: Cámara Canon Eos R50 Content Creator Kit -->
+            <div class="col mb-5 product-item" data-name="Cámara Canon Eos R50 Content Creator Kit" data-category="reflex">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20Canon%20Eos%20R50%20Content%20Creator%20Kit%20Con%20Mic%20Y%20Trípode.jpg" alt="Cámara Canon Eos R50 Content Creator Kit" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Cámara Canon Eos R50 Content Creator Kit</h5>
+                        <p class="card-text">$1800.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Cámara Canon Eos R50 Content Creator Kit" 
+                           data-price="1800.00" 
+                           data-description="Descripción de la Canon EOS R50 Content Creator Kit: Kit completo para creadores de contenido
+                           La Canon EOS R50 Content Creator Kit es un kit ideal para creadores de contenido que buscan una cámara versátil y fácil de usar para capturar fotos y videos de alta calidad. El kit incluye:
+                           
+                           •Una cámara sin espejo APS-C con un sensor de 24,2 megapíxeles, grabación de video 4K UHD y una pantalla táctil de ángulo variable.
+                           •Objetivo RF-S 18-45mm f/4.5-6.3 IS STM: Un objetivo zoom versátil con un rango de distancia focal de 18 a 45 mm, ideal para una amplia gama de tomas.
+                           •Micrófono estéreo direccional Canon DM-E100: Un micrófono externo que mejora la calidad del audio en las grabaciones de video.
+                           •Empuñadura para trípode Canon HG-100TBR: Una empuñadura que se puede usar como agarre para la cámara o como un pequeño trípode.
+                           Características principales de la cámara:
+                           
+                           •Sensor APS-C de 24,2 megapíxeles: Captura imágenes con gran nitidez y detalle.
+                           •Procesador de imagen DIGIC X: Ofrece un procesamiento de imagen rápido y preciso.
+                           •Grabación de video 4K UHD: Graba videos de alta calidad con gran detalle y color.
+                           •Pantalla táctil de ángulo variable: Permite una cómoda visualización y control de las imágenes y videos.
+                           •Conectividad Wi-Fi y Bluetooth: Fácil transferencia de imágenes a dispositivos móviles y control remoto de la cámara.
+                           •Diseño compacto y ligero: Fácil de transportar a cualquier lugar.
+                           Este kit es ideal para:
+                           
+                           •Creadores de contenido: Youtube, Instagram, TikTok, etc.
+                           •Vloggers: Que buscan una cámara fácil de usar para grabar videos de alta calidad.
+                           •Fotógrafos aficionados: Que buscan una cámara versátil para una amplia gama de tomas." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20Canon%20Eos%20R50%20Content%20Creator%20Kit%20Con%20Mic%20Y%20Trípode.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Cámara Canon Eos R50 Content Creator Kit" data-price="1800">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 14: Funda Nikon -->
+            <div class="col mb-5 product-item" data-name="Funda Nikon" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Funda%20nikon.jpg" alt="Funda Nikon" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Funda Nikon</h5>
+                        <p class="card-text">$30.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Funda Nikon" 
+                           data-price="30.00" 
+                           data-description="Descripción de Funda Nikon:Calidad Pro
+                           •Impermeable
+                           •Asa y Correa de Hombro
+                           •División Interior
+                           •1 Bolsillo tipo sobre
+                           
+                           Características principal
+                           • El diseño minimalista, los materiales de calidad y el acolchado grueso proporcionan una protección confiable para su cámara." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Funda%20nikon.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Funda Nikon" data-price="30">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 15: Micrófono Canon -->
+            <div class="col mb-5 product-item" data-name="Micrófono Canon" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/microfono%20canon.jpg" alt="Micrófono Canon" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Micrófono Canon</h5>
+                        <p class="card-text">$150.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Micrófono Canon" 
+                           data-price="150.00" 
+                           data-description="Descripción del micrófono Canon DM-E100 es una excelente opción para mejorar la calidad del audio en tus grabaciones de video con tu cámara Canon compatible.
+
+                           Características principales:
+                           
+                           •Diseño compacto y ligero: Fácil de transportar y usar.
+                           • Color negro: Combina con la mayoría de las cámaras Canon.
+                           • Un micrófono direccional: Captura sonido desde la dirección frontal, reduciendo el ruido de fondo.
+                           • Conexión por jack de 3.5 mm: Compatible con una amplia gama de cámaras Canon.
+                           •Peso ligero: Solo 64 gramos, no añadirá peso a tu cámara.
+                           •Frecuencia mínima de 100 Hz: Captura una amplia gama de frecuencias.
+                           •El micrófono DM-E100 es ideal para:
+                           
+                           Videógrafos aficionados y profesionales: Que buscan mejorar la calidad del audio en sus grabaciones.
+                           •Youtubers y creadores de contenido: Que necesitan un micrófono de buena calidad para sus videos.
+                           •Vloggers: Que buscan capturar un sonido claro y nítido en sus grabaciones." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/microfono%20canon.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Micrófono Canon" data-price="150">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 16: Cámara Sony Zv1 Vlog 4k Hdr Color Negro -->
+            <div class="col mb-5 product-item" data-name="Cámara Sony Zv1 Vlog 4k Hdr" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Camara%20Sony%20Zv1%20Vlog%204k%20Hdr%20Color%20Negro.jpg" alt="Cámara Sony Zv1 Vlog 4k Hdr" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Cámara Sony Zv1 Vlog 4k Hdr</h5>
+                        <p class="card-text">$8000.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Cámara Sony Zv1 Vlog 4k Hdr" 
+                           data-price="8000.00" 
+                           data-description="Descripción de la La Sony ZV-1 es una cámara digital compacta diseñada específicamente para creadores de contenido, vloggers y youtubers. Se destaca por su facilidad de uso, sus funciones avanzadas y su excelente calidad de imagen.
+
+                           Características principales:
+                           
+                           •Sensor Exmor RS CMOS de 1 pulgada: Captura imágenes con gran nitidez y detalle, incluso en condiciones de poca luz.
+                           •Lente ZEISS Vario-Sonnar T de 24-70 mm f/1.8-2.8: Ofrece un amplio rango focal y una apertura brillante, ideal para retratos y videos con bokeh.
+                           •Grabación de video 4K UHD a 30 fps: Graba videos de alta calidad con gran detalle y color.
+                           •Pantalla táctil LCD de 3 pulgadas con ángulo variable: Permite una cómoda visualización y control de las imágenes y videos, incluso desde ángulos difíciles.
+                           •Micrófono direccional de 3 cápsulas con paravientos: Captura sonido claro y nítido, incluso en entornos ruidosos.
+                           •Funciones de autoenfoque y seguimiento de ojos: Garantizan que tus sujetos siempre estén enfocados, incluso cuando se mueven.
+                           •Estabilización de imagen óptica y electrónica: Reduce las vibraciones y el movimiento de la cámara para obtener imágenes y videos más nítidos.
+                           •Conectividad Wi-Fi y Bluetooth: Comparte tus imágenes y videos fácilmente con dispositivos móviles y controla la cámara de forma remota.
+                           •Diseño compacto y ligero: Fácil de transportar a cualquier lugar.
+                           La Sony ZV-1 es ideal para:
+                           
+                           •Vloggers y youtubers: Que buscan una cámara fácil de usar y que ofrezca una excelente calidad de imagen para sus videos.
+                           •Creadores de contenido: Que necesitan una cámara versátil para capturar fotos y videos de alta calidad para sus redes sociales o su sitio web.
+                           •Fotógrafos aficionados: Que buscan una cámara compacta y ligera para llevar a sus viajes o para su uso diario." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Camara%20Sony%20Zv1%20Vlog%204k%20Hdr%20Color%20Negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Cámara Sony Zv1 Vlog 4k Hdr" data-price="800">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 17: Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb -->
+            <div class="col mb-5 product-item" data-name="Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Tarjeta%20Memoria%20Sandisk%20Ultra%20Sdhc-sdxc%20Uhs-i%2032gb%20100mb-s.jpg" alt="Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb</h5>
+                        <p class="card-text">$20.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb" 
+                           data-price="20.00" 
+                           data-description="Descripción de la tarjeta de memoria SanDisk Ultra SDHC/SDXC UHS-I 32GB es una excelente opción para ampliar el almacenamiento de tu cámara digital, smartphone o tableta.
+
+                           Características principales:
+                           
+                           •Capacidad de 32 GB: Almacena fotos, videos, música y otros archivos importantes.
+                           •Velocidad de lectura de hasta 120 MB/s: Transfiere archivos rápidamente a tu computadora u otros dispositivos.
+                           •Velocidad de escritura de hasta 80 MB/s: Graba videos y fotos de alta calidad sin problemas.
+                           •Compatible con SDHC y SDXC: Funciona con una amplia gama de dispositivos.
+                           •Clasificación de velocidad UHS-I Clase 10: Garantiza un rendimiento rápido y confiable.
+                           •Resistente al agua, a los golpes y a la temperatura: Protege tus datos contra los elementos.
+                           
+                           Esta tarjeta de memoria es ideal para:
+                           
+                           •Fotógrafos aficionados y profesionales: Que necesitan almacenar fotos y videos de alta resolución.
+                           •Usuarios de smartphones y tabletas: Que necesitan más espacio para sus aplicaciones, música y videos.
+                           •Cualquiera que quiera ampliar el almacenamiento de su dispositivo de forma rápida y sencilla."
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Tarjeta%20Memoria%20Sandisk%20Ultra%20Sdhc-sdxc%20Uhs-i%2032gb%20100mb-s.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Tarjeta Memoria Sandisk Ultra Sdhc-sdxc Uhs-i 32gb" data-price="20">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Producto 18: Cámara sin espejo Nikon Z30 con lente de 16-50 mm -->
+             <div class="col mb-5 product-item" data-name="Cámara sin espejo Nikon Z30 con lente de 16-50 mm" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20sin%20espejo%20Nikon%20Z30%20con%20lente%20de%2016-50%20mm.jpg" alt="Cámara sin espejo Nikon Z30 con lente de 16-50 mm" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Cámara sin espejo Nikon Z30 con lente de 16-50 mm</h5>
+                        <p class="card-text">$1500.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Cámara sin espejo Nikon Z30 con lente de 16-50 mm" 
+                           data-price="1500.00" 
+                           data-description="Descripción de la Nikon Z30 con lente de 16-50 mm es una cámara sin espejo APS-C diseñada para creadores de contenido, vloggers y streamers. Se destaca por su diseño compacto, su facilidad de uso, sus funciones avanzadas y su excelente calidad de imagen.
+
+                           Características principales:
+                           
+                           •Sensor CMOS APS-C de 20,9 megapíxeles: Captura imágenes con gran nitidez y detalle, incluso en condiciones de poca luz.
+                           •Procesador de imagen EXPEED 6: Ofrece un rápido procesamiento de imagen y un bajo nivel de ruido.
+                           •Grabación de video 4K UHD a 30 fps: Graba videos de alta calidad con gran detalle y color.
+                           •Pantalla táctil LCD de 3 pulgadas con ángulo variable: Permite una cómoda visualización y control de las imágenes y videos, incluso desde ángulos difíciles.
+                           •Micrófono estéreo integrado de alta calidad: Captura sonido claro y nítido para tus videos.
+                           •Funciones de autoenfoque y seguimiento de ojos: Garantizan que tus sujetos siempre estén enfocados, incluso cuando se mueven.
+                           •Estabilización de imagen electrónica: Reduce las vibraciones y el movimiento de la cámara para obtener imágenes y videos más nítidos.
+                           •Conectividad Wi-Fi y Bluetooth: Comparte tus imágenes y videos fácilmente con dispositivos móviles y controla la cámara de forma remota.
+                           •Diseño compacto y ligero: Fácil de transportar a cualquier lugar.
+                           •Lente NIKKOR Z DX 16-50mm f/3.5-6.3 VR: Un lente versátil con un rango focal de 16 a 50 mm, ideal para una amplia gama de tomas.
+                           La Nikon Z30 con lente de 16-50 mm es ideal para:
+                           
+                           •Vloggers y streamers: Que buscan una cámara fácil de usar y que ofrezca una excelente calidad de imagen para sus videos.
+                           •Creadores de contenido: Que necesitan una cámara versátil para capturar fotos y videos de alta calidad para sus redes sociales o su sitio web.
+                           •Fotógrafos aficionados: Que buscan una cámara compacta y ligera para llevar a sus viajes o para su uso diario." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20sin%20espejo%20Nikon%20Z30%20con%20lente%20de%2016-50%20mm.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Cámara sin espejo Nikon Z30 con lente de 16-50 mm" data-price="1500">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 19: Cámara digital Sony Rx0 II 4K -->
+            <div class="col mb-5 product-item" data-name="Cámara digital Sony Rx0 II 4K" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20digital%20Sony%20Rx0%202%204K%20de%2015%2C3%20MP%2C%20impermeable%20y%20a%20prueba%20de%20golpes%2C%20color%20negro.jpg" alt="Cámara digital Sony Rx0 II 4K" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Cámara digital Sony Rx0 II 4K</h5>
+                        <p class="card-text">$1200.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Cámara digital Sony Rx0 II 4K" 
+                           data-price="1200.00" 
+                           data-description="Descripción de la Sony RX0 II es una cámara digital compacta diseñada para capturar imágenes y videos de alta calidad en entornos extremos. Se destaca por su diseño robusto y resistente al agua, su sensor de imagen grande y su versatilidad.
+
+                           Características principales:
+                           
+                           •Sensor Exmor RS CMOS de 1 pulgada: Captura imágenes con gran nitidez y detalle, incluso en condiciones de poca luz.
+                           •Lente ZEISS Tessar T de 24 mm f/4: Ofrece un amplio ángulo de visión y una calidad de imagen excepcional.
+                           •Grabación de video 4K UHD a 30 fps: Graba videos de alta calidad con gran detalle y color.
+                           •Pantalla LCD inclinable a 180 grados: Permite una cómoda visualización y control de las imágenes y videos, incluso desde ángulos difíciles.
+                           •Micrófono estéreo integrado: Captura sonido claro y nítido para tus videos.
+                           •Estabilización de imagen óptica: Reduce las vibraciones y el movimiento de la cámara para obtener imágenes y videos más nítidos.
+                           •Conectividad Wi-Fi y Bluetooth: Comparte tus imágenes y videos fácilmente con dispositivos móviles y controla la cámara de forma remota.
+                           •Diseño compacto, ligero y resistente: Fácil de transportar a cualquier lugar y resistente al agua, golpes y caídas.
+                           La Sony RX0 II es ideal para:
+                           
+                           •Fotógrafos y videógrafos de acción: Que necesitan una cámara resistente y versátil para capturar imágenes y videos en entornos extremos.
+                           •Creadores de contenido: Que buscan una cámara compacta y de alta calidad para sus viajes, aventuras o actividades al aire libre.
+                           •Vloggers: Que buscan una cámara fácil de usar y que ofrezca una excelente calidad de imagen para sus videos." 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/Cámara%20digital%20Sony%20Rx0%202%204K%20de%2015%2C3%20MP%2C%20impermeable%20y%20a%20prueba%20de%20golpes%2C%20color%20negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Cámara digital Sony Rx0 II 4K" data-price="1200">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 20: Nikon Kit Z7 + lente 24-70mm sin espejo color negro -->
+            <div class="col mb-5 product-item" data-name="Nikon Kit Z7 + lente 24-70mm sin espejo color negro" data-category="mirrorless">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Nikon%20Kit%20Z7%20%2B%20lente%2024-70mm%20sin%20espejo%20color%20negro.jpg" alt="Nikon Kit Z7 + lente 24-70mm sin espejo color negro" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Nikon Kit Z7 + lente 24-70mm sin espejo color negro</h5>
+                        <p class="card-text">$3000.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Nikon Kit Z7 + lente 24-70mm sin espejo color negro" 
+                           data-price="3000.00" 
+                           data-description="Descripción del Nikon Kit Z7 + Lente 24-70mm es una combinación ideal para fotógrafos profesionales y entusiastas que buscan llevar su fotografía al siguiente nivel. La cámara Z7 ofrece un sensor de fotograma completo de 45,7 megapíxeles que captura imágenes con un detalle y una nitidez excepcionales, incluso en condiciones de poca luz. El lente NIKKOR Z 24-70mm f/4 S proporciona un rango focal versátil para una amplia gama de tomas, desde paisajes hasta retratos.
+
+                           Características principales de la cámara:
+                           
+                           •Sensor CMOS de fotograma completo de 45,7 megapíxeles: Captura imágenes con un detalle y una nitidez excepcionales.
+                           •Sistema de autoenfoque de 493 puntos con detección de fase: Garantiza un enfoque preciso y rápido, incluso en condiciones de poca luz.
+                           •Grabación de video 4K UHD: Graba videos de alta calidad con gran detalle y color.
+                           •Pantalla táctil LCD de 3,2 pulgadas: Permite una cómoda visualización y control de las imágenes y videos.
+                           •Conectividad Wi-Fi y Bluetooth: Comparte tus imágenes y videos fácilmente con dispositivos móviles y controla la cámara de forma remota.
+                           •Diseño robusto y resistente a la intemperie: Soporta condiciones climáticas adversas.
+                           Características principales del lente:
+                           
+                           •Rango focal de 24-70 mm: Versátil para una amplia gama de tomas.
+                           •Apertura máxima de f/4: Constante en todo el rango focal.
+                           •Estabilización de imagen VR: Reduce las vibraciones y el movimiento de la cámara para obtener imágenes más nítidas.
+                           •Diseño compacto y ligero: Fácil de transportar.
+                           El Nikon Kit Z7 + Lente 24-70mm es ideal para:
+                           
+                           •Fotógrafos profesionales: Que necesitan una cámara de alta calidad para sus trabajos más exigentes.
+                           •Entusiastas de la fotografía: Que buscan una cámara que les permita llevar su fotografía al siguiente nivel.
+                           " 
+                           data-image="https://github.com/camilaandrada/Tienda-Camaras/raw/main/Nikon%20Kit%20Z7%20%2B%20lente%2024-70mm%20sin%20espejo%20color%20negro.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Nikon Kit Z7 + lente 24-70mm sin espejo color negro" data-price="3000">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 21:Flash Yougnuo para canon -->
+            <div class="col mb-5 product-item" data-name="Flash Yougnuo para Canon" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/flash.jpg" alt="Flash Yougnuo" />
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder">Flash Yougnuo para Canon</h5>
+                        <p class="card-text">$750.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                           data-name="Flash Yougnuo para Canon" 
+                           data-price="750.00" 
+                           data-description="Descripción del Flash Yougnuo para Canon: Este flash versátil y potente es ideal para fotógrafos que buscan iluminación adicional en sus fotografías. Ofrece características avanzadas como [insertar características principales].
+            
+                           Características principales del flash:
+                           
+                           • Potente salida de luz.
+                           • Versatilidad en diferentes condiciones de iluminación.
+                           • Fácil de ajustar y utilizar.
+                           • [Más características destacadas].
+            
+                           El Flash Yougnuo es esencial para:
+                           
+                           • Fotógrafos profesionales que necesitan control adicional sobre la iluminación.
+                           • Aficionados que desean mejorar la calidad de sus fotos con una iluminación profesional.
+                           " 
+                           data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/flash.jpg">
+                           Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Flash Yougnuo" data-price="750.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+           
+
+                <!-- Producto 22: Canon EOS 70D -->
+                <div class="col mb-5 product-item" data-name="Canon EOS 70D" data-category="reflex">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/eos_70d.png" alt="Canon EOS 70D" />
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bolder">Canon EOS 70D</h5>
+                            <p class="card-text">$750.00</p>
+                            <!-- Enlace para ver detalles del producto -->
+                            <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                            data-name="Canon EOS 70D" 
+                            data-price="750.00" 
+                            data-description="Descripción de la Canon EOS 70D: Una cámara réflex digital avanzada ideal para fotógrafos aficionados y profesionales. Ofrece un sensor de alta resolución y una interfaz de usuario amigable.
+                            
+                            Características principales de la cámara:
+                            
+                            • Sensor de alta resolución.
+                            • Interfaz de usuario amigable.
+                            • Rápido enfoque automático.
+                            • [Más características destacadas].
+                            
+                            La Canon EOS 70D es perfecta para:
+                            
+                            • Fotógrafos aficionados que buscan mejorar su equipo.
+                            • Profesionales que necesitan una cámara confiable y de alta calidad.
+                            " 
+                            data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/eos_70d.png">
+                            Ver detalles
+                            </a>
+                            <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Canon EOS 70D" data-price="750.00">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Producto 23: Lente Canon EF 70-200mm -->
+                <div class="col mb-5 product-item" data-name="Lente Canon EF 70-200mm" data-category="lentes">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/lente%20canon%20%20EF%2070-200mm.png" alt="Lente Canon EF 70-200mm" />
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bolder">Lente Canon EF 70-200mm</h5>
+                            <p class="card-text">$1200.00</p>
+                            <!-- Enlace para ver detalles del producto -->
+                            <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                            data-name="Lente Canon EF 70-200mm" 
+                            data-price="1200.00" 
+                            data-description="Descripción del Lente Canon EF 70-200mm: Este lente telefoto de alta calidad es perfecto para fotografía de deportes y naturaleza. Ofrece un excelente rendimiento óptico y una construcción robusta.
+                            
+                            Características principales del lente:
+                            
+                            • Excelente rendimiento óptico.
+                            • Construcción robusta.
+                            • Ideal para fotografía de deportes y naturaleza.
+                            • [Más características destacadas].
+                            
+                            El Lente Canon EF 70-200mm es esencial para:
+                            
+                            • Fotógrafos de deportes y naturaleza que necesitan un telefoto confiable.
+                            • Profesionales que buscan un rendimiento óptico superior.
+                            " 
+                            data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/lente%20canon%20%20EF%2070-200mm.png">
+                            Ver detalles
+                            </a>
+                            <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Lente Canon EF 70-200mm" data-price="1200.00">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 24: Micrófono Rode Wireless GO -->
+            <div class="col mb-5 product-item product-card" data-category="accesorios">
+                <div class="card h-100">
+                    <img class="card-img-top img-fluid" src="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/microfono%20rode.png" alt="Micrófono Rode Wireless GO">
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bolder card-title">Micrófono Rode Wireless GO</h5>
+                        <p class="card-text">$250.00</p>
+                        <!-- Enlace para ver detalles del producto -->
+                        <a class="btn btn-outline-dark mt-auto view-product-detail" href="#" 
+                        data-name="Micrófono Rode Wireless GO" 
+                        data-price="250.00" 
+                        data-description="Descripción del Micrófono Rode Wireless GO: Un micrófono compacto y de alta calidad ideal para grabaciones de video y entrevistas. 
+                        
+                        Características principales del micrófono:
+                        
+                        • Condensador omnidireccional.
+                        • Transmisión inalámbrica.
+                        • Alta calidad de audio.
+                        
+                        El Micrófono Rode Wireless GO es perfecto para:
+                        
+                        • Grabaciones de video.
+                        • Entrevistas.
+                        • Podcasting." 
+                        data-image="https://raw.githubusercontent.com/camilaandrada/Tienda-Camaras/main/microfono%20rode.png">
+                        Ver detalles
+                        </a>
+                        <a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-name="Micrófono Rode Wireless GO" data-price="250.00">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulario de Mi Cuenta -->
+<div id="mi-cuenta-form" class="container mt-4" style="display: none;">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+                <div class="card-body p-4 p-sm-5">
+                    <h5 class="card-title text-center mb-5 fw-light fs-5">Iniciar Sesión</h5>
+                    <form id="loginFormAccount">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="inputEmailAccount" placeholder="name@example.com" required>
+                            <label for="inputEmailAccount">Correo Electrónico</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="inputPasswordAccount" placeholder="Contraseña" required>
+                            <label for="inputPasswordAccount">Contraseña</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheckAccount">
+                            <label class="form-check-label" for="rememberPasswordCheckAccount">Recordar contraseña</label>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Iniciar Sesión</button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="d-grid mb-2">
+                            <button class="btn btn-google btn-login text-uppercase fw-bold" type="button">
+                                <i class="fab fa-google me-2"></i> Iniciar Sesión con Google
+                            </button>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="button">
+                                <i class="fab fa-facebook-f me-2"></i> Iniciar Sesión con Facebook
+                            </button>
+                        </div>
+                    </form>
+                    <div id="loginErrorAccount" class="alert alert-danger d-none mt-3">Credenciales incorrectas. Por favor, inténtalo de nuevo.</div>
+                    <div id="loginSuccessAccount" class="alert alert-success d-none mt-3">Sesión iniciada correctamente.</div>
+                    <div class="text-center mt-3">
+                        ¿No tienes cuenta? <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Crear una cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Inicio de Sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginFormModal">
+                    <div class="mb-3">
+                        <label for="inputEmailModal" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmailModal" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPasswordModal" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPasswordModal" required>
+                    </div>
+                    <div id="loginErrorModal" class="alert alert-danger d-none" role="alert">Error: Credenciales inválidas. Por favor, intenta nuevamente.</div>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Registro -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Crear una cuenta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="signupEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="signupPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal de detalles del producto -->
+<div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productDetailModalLabel">Detalles del Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <section class="py-5">
+                    <div class="container px-4 px-lg-5 my-5">
+                        <div class="row gx-4 gx-lg-5 align-items-center">
+                            <div class="col-md-6">
+                                <img class="card-img-top mb-5 mb-md-0" id="productDetailImage" src="" alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                
+                                <h1 class="display-5 fw-bolder" id="productDetailName">Shop item template</h1>
+                                <div class="fs-5 mb-5">
+                                    
+                                    <span id="productDetailPrice">$40.00</span>
+                                </div>
+                                <p class="lead" id="productDetailDescription"></p>
+                                <div class="d-flex">
+                                    <input id="productDetailQuantity" class="form-control text-center me-3" type="num" value="1" style="max-width: 3rem">
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="button" id="incrementQuantityModal">
+                                        +
+                                    </button>
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="button" id="decrementQuantityModal">
+                                        -
+                                    </button>
+                                    <button class="btn btn-outline-dark flex-shrink-0" type="button" id="addToCartModalButton">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Añadir al Carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Carrito Modal-->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group mb-3">
+                        <!-- Items del carrito -->
+                    </ul>
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- Botón para pagar -->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#purchaseModal">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Compra Exitosa -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Compra Exitosa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por tu compra! Tu pedido ha sido procesado exitosamente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <main class="py-5">
+        <div class="container">
+            <div id="productList" class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                <!-- Aquí se generarán dinámicamente los productos -->
+            </div>
+        </div>
+
+        <!-- Contenedor para mostrar el detalle del producto seleccionado -->
+        <div id="productDetailContainer"></div>
+    </main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container-fluid px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <h5 class="text-uppercase text-white">Contacto</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Dirección: Avenida del Libertador 123, Ciudad Autónoma de Buenos Aires, Argentina</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Teléfono: +123 456 789</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@tutiendadecamaras.com" class="text-white">Email: info@tutiendadecamaras.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <h5 class="text-uppercase text-white">Atención al Cliente</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Política de Devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Privacidad</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-white">Redes Sociales</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h5 class="text-uppercase text-white mt-4">Reclamos y Sugerencias</h5>
+                <p><a href="#!" class="text-white">¿Tienes algún reclamo o sugerencia? Contáctanos aquí.</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p class="m-0 text-white">Copyright &copy; Tienda de Cámaras</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="path/to/bootstrap.bundle.min.js"></script>
+<script src="path/to/filtros.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS y Scripts Personalizados -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-8qeLX0AEJw5L6RNT/3trdBbVpK3T9Hj+etZsHF5AqWP//A6oQxpIzzhYbOWaXgeT" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-BKiW5flB1t2Skv0e3/iuokHvA8h2r2x/2Mk6w29irbS9vgvK9c4o8b9FW3y9x7MLFW1PRP2DCqWNLdA6grun7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    // Espera a que se cargue el DOM antes de ejecutar el código
+    document.addEventListener("DOMContentLoaded", () => {
+        // Definición de variables globales
+        const cart = []; // Array para almacenar los productos en el carrito
+        const cartButton = document.getElementById("cart-button"); // Botón para mostrar el carrito
+        const cartCount = document.getElementById("cart-count"); // Contador de productos en el carrito
+        const cartItems = document.getElementById("cart-items"); // Lista de productos en el carrito
+        const cartTotal = document.getElementById("cart-total"); // Total del carrito
+        const searchInput = document.getElementById("searchInput"); // Input de búsqueda
+        const searchButton = document.getElementById("searchButton"); // Botón de búsqueda
+        const productList = document.getElementById("productList"); // Lista de productosPP
+
+        // Usuarios de ejemplo
+        const users = [
+            { email: "user1@example.com", password: "hola123" },
+            { email: "user2@example.com", password: "456" }
+        ];
+
+        // Función para actualizar la visualización del carrito
+        const updateCart = () => {
+            cartItems.innerHTML = ""; // Limpiar lista de productos en el carrito
+            let total = 0; // Inicializar total del carrito
+
+            // Iterar sobre cada producto en el carrito y mostrar en la lista
+            cart.forEach((item, index) => {
+                total += item.price; // Sumar el precio al total
+                const li = document.createElement("li"); // Crear elemento de lista
+                li.className = "list-group-item d-flex justify-content-between align-items-center";
+                li.innerHTML = `
+                    ${item.name} - $${item.price.toFixed(2)}
+                    <button class="btn btn-sm btn-danger" data-index="${index}">&times;</button>
+                `;
+                cartItems.appendChild(li); // Agregar elemento de lista al DOM
+            });
+
+            cartTotal.textContent = `$${total.toFixed(2)}`; // Mostrar el total del carrito
+            cartCount.textContent = cart.length; // Mostrar la cantidad de productos en el carrito
+            localStorage.setItem("cart", JSON.stringify(cart)); // Guardar el carrito en localStorage
+        };
+
+        // Función para cargar el carrito desde localStorage al cargar la página
+        const loadCartFromStorage = () => {
+            const storedCart = localStorage.getItem("cart"); // Obtener el carrito almacenado en localStorage
+            if (storedCart) {
+                const parsedCart = JSON.parse(storedCart); // Parsear el JSON del carrito almacenado
+                cart.push(...parsedCart); // Agregar los productos al carrito actual
+                updateCart(); // Actualizar la visualización del carrito
+            }
+        };
+
+        // Event listener para agregar productos al carrito
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", event => {
+                event.preventDefault();
+                const name = button.getAttribute("data-name");
+                const price = parseFloat(button.getAttribute("data-price"));
+                cart.push({ name, price }); // Agregar producto al carrito
+                updateCart(); // Actualizar la visualización del carrito
+            });
+        });
+
+        // Event listener para eliminar productos del carrito
+        cartItems.addEventListener("click", event => {
+            if (event.target.tagName === "BUTTON") {
+                const index = event.target.getAttribute("data-index");
+                cart.splice(index, 1); // Eliminar producto del carrito
+                updateCart(); // Actualizar la visualización del carrito
+            }
+        });
+
+        // Event listener para mostrar el modal del carrito
+        cartButton.addEventListener("click", () => {
+            const cartModal = new bootstrap.Modal(document.getElementById("cartModal"));
+            cartModal.show();
+        });
+
+        // Event listener para la búsqueda de productos
+        searchButton.addEventListener("click", () => {
+            const searchTerm = searchInput.value.toLowerCase(); // Obtener término de búsqueda en minúsculas
+            const productCards = document.getElementsByClassName("product-card");
+
+            // Iterar sobre cada tarjeta de producto y mostrar/ocultar según el término de búsqueda
+            Array.from(productCards).forEach(card => {
+                const productName = card.querySelector(".card-title").textContent.toLowerCase();
+                card.style.display = productName.includes(searchTerm) ? "block" : "none";
+            });
+        });
+
+        // Event listener para filtrar productos por categoría
+const categoryButtons = document.querySelectorAll("[data-category]");
+categoryButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.getAttribute("data-category");
+        const productItems = document.querySelectorAll(".product-item");
+
+        // Iterar sobre cada producto y mostrar/ocultar según la categoría seleccionada
+        productItems.forEach(item => {
+            const productCategory = item.getAttribute("data-category");
+            item.style.display = (category === "all" || category === productCategory) ? "block" : "none";
+        });
+    });
+});
+
+// Mostrar todos los productos por defecto al cargar la página
+window.addEventListener("load", () => {
+    const productItems = document.querySelectorAll(".product-item");
+    productItems.forEach(item => {
+        item.style.display = "block";
+    });
+});
+
+
+
+     // Configurar eventos para botones de detalle
+     const viewDetailButtons = document.querySelectorAll('.view-product-detail');
+            viewDetailButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const name = button.getAttribute('data-name');
+                    const price = parseFloat(button.getAttribute('data-price'));
+                    const description = button.getAttribute('data-description');
+                    const image = button.getAttribute('data-image');
+                    showProductDetail(name, price, description, image);
+                });
+            });
+
+            // Función para mostrar los detalles del producto en el modal
+            const showProductDetail = (name, price, description, imageSrc) => {
+                document.getElementById('productDetailName').textContent = name;
+                document.getElementById('productDetailPrice').textContent = `$${price.toFixed(2)}`;
+                document.getElementById('productDetailDescription').textContent = description;
+                document.getElementById('productDetailImage').src = imageSrc;
+
+                const modal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+                modal.show(); // Mostrar el modal de detalles del producto
+            };
+
+            // Event listeners para aumentar y disminuir la cantidad de productos en el modal de detalles
+            document.getElementById('incrementQuantityModal').addEventListener("click", () => {
+                const quantityInput = document.getElementById('productDetailQuantity');
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+            });
+
+            document.getElementById('decrementQuantityModal').addEventListener("click", () => {
+                const quantityInput = document.getElementById('productDetailQuantity');
+                const quantity = parseInt(quantityInput.value);
+                if (quantity > 1) quantityInput.value = quantity - 1;
+            });
+
+            // Event listener para agregar productos al carrito desde el modal de detalles
+            document.getElementById('addToCartModalButton').addEventListener("click", () => {
+                const name = document.getElementById('productDetailName').textContent;
+                const price = parseFloat(document.getElementById('productDetailPrice').textContent.replace('$', ''));
+                const quantity = parseInt(document.getElementById('productDetailQuantity').value);
+
+                for (let i = 0; i < quantity; i++) {
+                    cart.push({ name, price }); // Agregar producto(s) al carrito
+                }
+                updateCart(); // Actualizar la visualización del carrito
+                const modal = bootstrap.Modal.getInstance(document.getElementById('productDetailModal'));
+                modal.hide(); // Ocultar el modal de detalles del producto
+            });
+
+            // Cargar el carrito desde localStorage al cargar la página
+            loadCartFromStorage();
+        
+            // Manejo de inicio de sesión para el formulario en Mi Cuenta
+        const loginFormAccount = document.getElementById("loginFormAccount");
+        const loginErrorAccount = document.getElementById("loginErrorAccount");
+        const loginSuccessAccount = document.getElementById("loginSuccessAccount");
+
+        loginFormAccount.addEventListener("submit", event => {
+            event.preventDefault();
+            const email = document.getElementById('inputEmailAccount').value;
+            const password = document.getElementById('inputPasswordAccount').value;
+            const user = users.find(user => user.email === email && user.password === password);
+
+            if (user) {
+                loginSuccessAccount.classList.remove("d-none");
+                loginErrorAccount.classList.add("d-none");
+            } else {
+                loginErrorAccount.classList.remove("d-none");
+                loginSuccessAccount.classList.add("d-none");
+            }
+        });
+
+        // Manejo de inicio de sesión para el formulario en el modal de inicio de sesión
+        const loginFormModal = document.getElementById("loginFormModal");
+        const loginErrorModal = document.getElementById("loginErrorModal");
+
+        loginFormModal.addEventListener("submit", event => {
+            event.preventDefault();
+            const email = document.getElementById('inputEmailModal').value;
+            const password = document.getElementById('inputPasswordModal').value;
+            const user = users.find(user => user.email === email && user.password === password);
+
+            if (user) {
+                loginErrorModal.classList.add("d-none");
+                const modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                modal.hide();
+            } else {
+                loginErrorModal.classList.remove("d-none");
+            }
+        });
+
+       
+
+
+});
+</script>
